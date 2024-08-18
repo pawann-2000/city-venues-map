@@ -1,0 +1,2242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bbd4e339208e6b61c1ec039533b5bc5e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+    <div style="position:fixed; bottom:10px; left:10px; border:2px solid black; z-index:9999; font-size:14px;">
+    &nbsp;<b>Cluster:</b><br>
+    &nbsp;<i class="fa fa-circle fa-1x" style="color:#E2D2BC"></i>&nbsp;1<br>&nbsp;<i class="fa fa-circle fa-1x" style="color:#49DD70"></i>&nbsp;0<br>&nbsp;<i class="fa fa-circle fa-1x" style="color:#8CD6A4"></i>&nbsp;2<br>&nbsp;<i class="fa fa-circle fa-1x" style="color:#D70D82"></i>&nbsp;3<br></div>
+    
+            <div class="folium-map" id="map_bbd4e339208e6b61c1ec039533b5bc5e" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bbd4e339208e6b61c1ec039533b5bc5e = L.map(
+                "map_bbd4e339208e6b61c1ec039533b5bc5e",
+                {
+                    center: [12.9767936, 77.590082],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 11,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_65e8280dc81120a69e65ba0b97d82fc8 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 20, "maxZoom": 20, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abcd", "tms": false}
+            );
+        
+    
+            tile_layer_65e8280dc81120a69e65ba0b97d82fc8.addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+            var circle_marker_58f286dc7b4c7082e11c205a0c279387 = L.circleMarker(
+                [12.972361772490226, 77.59505132638924],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.80722891566265, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_dedaaa02ef431615d782b03348202ec9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12b84ec965f2f538d26807709f9cfd6b = $(`<div id="html_12b84ec965f2f538d26807709f9cfd6b" style="width: 100.0%; height: 100.0%;">24/1 Vittal Mallya Road, Bangalore 560001, Karnātaka, India</div>`)[0];
+                popup_dedaaa02ef431615d782b03348202ec9.setContent(html_12b84ec965f2f538d26807709f9cfd6b);
+            
+        
+
+        circle_marker_58f286dc7b4c7082e11c205a0c279387.bindPopup(popup_dedaaa02ef431615d782b03348202ec9)
+        ;
+
+        
+    
+    
+            var circle_marker_42ba2bc0cc75f3dd6eab924144294389 = L.circleMarker(
+                [12.984572066608893, 77.58489294114838],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.759036144578313, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_c5741665cc4deee6291b1e2d09452ba5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0a7d7476cbd92823b72474bd042a439 = $(`<div id="html_f0a7d7476cbd92823b72474bd042a439" style="width: 100.0%; height: 100.0%;">Racecourse Rd., Bangalore, Karnātaka, India</div>`)[0];
+                popup_c5741665cc4deee6291b1e2d09452ba5.setContent(html_f0a7d7476cbd92823b72474bd042a439);
+            
+        
+
+        circle_marker_42ba2bc0cc75f3dd6eab924144294389.bindPopup(popup_c5741665cc4deee6291b1e2d09452ba5)
+        ;
+
+        
+    
+    
+            var circle_marker_eeab041a61987a920d4874b1ae8fc2e7 = L.circleMarker(
+                [12.977042175203783, 77.59527683258057],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.072289156626507, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_1d54e780751dfb85e376c060c9f0709a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_30b942a7a8e05bae0a0e1b5e3515bdba = $(`<div id="html_30b942a7a8e05bae0a0e1b5e3515bdba" style="width: 100.0%; height: 100.0%;">M G Road, Bangalore, Karnātaka, India</div>`)[0];
+                popup_1d54e780751dfb85e376c060c9f0709a.setContent(html_30b942a7a8e05bae0a0e1b5e3515bdba);
+            
+        
+
+        circle_marker_eeab041a61987a920d4874b1ae8fc2e7.bindPopup(popup_1d54e780751dfb85e376c060c9f0709a)
+        ;
+
+        
+    
+    
+            var circle_marker_ee9704d6d5c134984db85048ac4b572e = L.circleMarker(
+                [12.971656175823421, 77.59825417986832],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.674698795180722, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_c6b14dbbbbd3e69f193d590a1ebd7f11 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68b1f11847c797740d66968c7d96baa2 = $(`<div id="html_68b1f11847c797740d66968c7d96baa2" style="width: 100.0%; height: 100.0%;">52,53 (Lavelle Road), Bangalore 560001, Karnātaka, India</div>`)[0];
+                popup_c6b14dbbbbd3e69f193d590a1ebd7f11.setContent(html_68b1f11847c797740d66968c7d96baa2);
+            
+        
+
+        circle_marker_ee9704d6d5c134984db85048ac4b572e.bindPopup(popup_c6b14dbbbbd3e69f193d590a1ebd7f11)
+        ;
+
+        
+    
+    
+            var circle_marker_5a02cb61f4ac60e66e2cc201a5043651 = L.circleMarker(
+                [12.9761788, 77.6015427],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.674698795180722, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_8a0f2b33afc425d5cafce74fba979921 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd63a72542f89b625252f296634921d8 = $(`<div id="html_dd63a72542f89b625252f296634921d8" style="width: 100.0%; height: 100.0%;">40 St. Marks Road (St. Marks Rd), Bangalore 560001, Karnātaka, India</div>`)[0];
+                popup_8a0f2b33afc425d5cafce74fba979921.setContent(html_dd63a72542f89b625252f296634921d8);
+            
+        
+
+        circle_marker_5a02cb61f4ac60e66e2cc201a5043651.bindPopup(popup_8a0f2b33afc425d5cafce74fba979921)
+        ;
+
+        
+    
+    
+            var circle_marker_3d5b759608b9765fda422eecdf7631db = L.circleMarker(
+                [12.967754615278329, 77.60007264264614],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.674698795180722, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_7111173036423394dec4a68e13f5650d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61e2be7d2eae6b3d31e364c22ee9d231 = $(`<div id="html_61e2be7d2eae6b3d31e364c22ee9d231" style="width: 100.0%; height: 100.0%;">4th Floor, Devatha Plaza (Residency Road), Bangalore, Karnātaka, India</div>`)[0];
+                popup_7111173036423394dec4a68e13f5650d.setContent(html_61e2be7d2eae6b3d31e364c22ee9d231);
+            
+        
+
+        circle_marker_3d5b759608b9765fda422eecdf7631db.bindPopup(popup_7111173036423394dec4a68e13f5650d)
+        ;
+
+        
+    
+    
+            var circle_marker_d37c43bd033cdbe52b481696628ce135 = L.circleMarker(
+                [12.971377630166776, 77.60098865044374],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.674698795180722, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_1b628d2727a3addf5d5e46540a9edace = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b209ba3349a3d905ff658d719fbc9ec8 = $(`<div id="html_b209ba3349a3d905ff658d719fbc9ec8" style="width: 100.0%; height: 100.0%;">Unit #20, Ground Floor, 15/16 (House Of Lords, St Marks Rd), Bangalore 560001, Karnātaka, India</div>`)[0];
+                popup_1b628d2727a3addf5d5e46540a9edace.setContent(html_b209ba3349a3d905ff658d719fbc9ec8);
+            
+        
+
+        circle_marker_d37c43bd033cdbe52b481696628ce135.bindPopup(popup_1b628d2727a3addf5d5e46540a9edace)
+        ;
+
+        
+    
+    
+            var circle_marker_a3a2ea1da9e43261fe3a9d322c2baae9 = L.circleMarker(
+                [12.971899559077535, 77.59623643170688],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.385542168674698, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_ea636572b03c34c604bd69393276d228 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1ce2008dd9947c7d54789253389ea34 = $(`<div id="html_e1ce2008dd9947c7d54789253389ea34" style="width: 100.0%; height: 100.0%;">3rd Flr., UB City, Vittal Mallya Rd. (Lavelle Rd.), Bangalore 560001, Karnātaka, India</div>`)[0];
+                popup_ea636572b03c34c604bd69393276d228.setContent(html_e1ce2008dd9947c7d54789253389ea34);
+            
+        
+
+        circle_marker_a3a2ea1da9e43261fe3a9d322c2baae9.bindPopup(popup_ea636572b03c34c604bd69393276d228)
+        ;
+
+        
+    
+    
+            var circle_marker_aa44a91e55bf0ea6c6c35f9418932554 = L.circleMarker(
+                [12.98830366372137, 77.57712961194349],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.795180722891565, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_a1f35fcf4d74bfcaa5271576f253381e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d566b0c4b789e473c633eb5c9d79125f = $(`<div id="html_d566b0c4b789e473c633eb5c9d79125f" style="width: 100.0%; height: 100.0%;">Nehru Circle (Near Sheshadripuram College), Bangalore, Karnātaka, India</div>`)[0];
+                popup_a1f35fcf4d74bfcaa5271576f253381e.setContent(html_d566b0c4b789e473c633eb5c9d79125f);
+            
+        
+
+        circle_marker_aa44a91e55bf0ea6c6c35f9418932554.bindPopup(popup_a1f35fcf4d74bfcaa5271576f253381e)
+        ;
+
+        
+    
+    
+            var circle_marker_403e442339c38f02162a141a00273319 = L.circleMarker(
+                [12.987156756402875, 77.59483450996156],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.638554216867469, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_b0837a17901ab328d5ecdb41392e1981 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0b5b0a486e858008ba7ffd7b25d7289c = $(`<div id="html_0b5b0a486e858008ba7ffd7b25d7289c" style="width: 100.0%; height: 100.0%;">Cunningham Road (Vasanth Nagar), Bangalore 560052, Karnātaka, India</div>`)[0];
+                popup_b0837a17901ab328d5ecdb41392e1981.setContent(html_0b5b0a486e858008ba7ffd7b25d7289c);
+            
+        
+
+        circle_marker_403e442339c38f02162a141a00273319.bindPopup(popup_b0837a17901ab328d5ecdb41392e1981)
+        ;
+
+        
+    
+    
+            var circle_marker_990970485a62882a7522c2caaafa7d0c = L.circleMarker(
+                [12.971708980695311, 77.59590528412356],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.385542168674698, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_161cc3d8730fb02f2f66ea8d428055c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b62d551113520c74cbd9054de6341b0 = $(`<div id="html_3b62d551113520c74cbd9054de6341b0" style="width: 100.0%; height: 100.0%;">at Vittal Mallya Rd, Bangalore 560001, Karnātaka, India</div>`)[0];
+                popup_161cc3d8730fb02f2f66ea8d428055c5.setContent(html_3b62d551113520c74cbd9054de6341b0);
+            
+        
+
+        circle_marker_990970485a62882a7522c2caaafa7d0c.bindPopup(popup_161cc3d8730fb02f2f66ea8d428055c5)
+        ;
+
+        
+    
+    
+            var circle_marker_77c44aab0e2131e290a98353af7724f9 = L.circleMarker(
+                [12.971801622357315, 77.60103059863826],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.53012048192771, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_c102edda41fbb27363ed74d083e6f35b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b62170c00cfc34ccb49c6a47f7375bc1 = $(`<div id="html_b62170c00cfc34ccb49c6a47f7375bc1" style="width: 100.0%; height: 100.0%;">#22 (St. Marks Rd), Bangalore 560001, Karnātaka, India</div>`)[0];
+                popup_c102edda41fbb27363ed74d083e6f35b.setContent(html_b62170c00cfc34ccb49c6a47f7375bc1);
+            
+        
+
+        circle_marker_77c44aab0e2131e290a98353af7724f9.bindPopup(popup_c102edda41fbb27363ed74d083e6f35b)
+        ;
+
+        
+    
+    
+            var circle_marker_5b4103b891d4a3c58ffb830f8929bb12 = L.circleMarker(
+                [12.975041955414428, 77.60481252972643],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.53012048192771, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_971e5c413bdf75ce48b739b17c39ca81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9cfbb2e73978d33dcaeceb1e230152d0 = $(`<div id="html_9cfbb2e73978d33dcaeceb1e230152d0" style="width: 100.0%; height: 100.0%;">#84/6 Church St, Bangalore 560001, Karnātaka, India</div>`)[0];
+                popup_971e5c413bdf75ce48b739b17c39ca81.setContent(html_9cfbb2e73978d33dcaeceb1e230152d0);
+            
+        
+
+        circle_marker_5b4103b891d4a3c58ffb830f8929bb12.bindPopup(popup_971e5c413bdf75ce48b739b17c39ca81)
+        ;
+
+        
+    
+    
+            var circle_marker_2ab4f34728bbbf20678069af293b55df = L.circleMarker(
+                [12.9757705183477, 77.60397895324303],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.53012048192771, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_00e94caaca3b4c4df9bd6b59f48e9264 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84895b577d2b1a964569d3561310f3e1 = $(`<div id="html_84895b577d2b1a964569d3561310f3e1" style="width: 100.0%; height: 100.0%;">M. G. Road, Bangalore 560001, Karnātaka, India</div>`)[0];
+                popup_00e94caaca3b4c4df9bd6b59f48e9264.setContent(html_84895b577d2b1a964569d3561310f3e1);
+            
+        
+
+        circle_marker_2ab4f34728bbbf20678069af293b55df.bindPopup(popup_00e94caaca3b4c4df9bd6b59f48e9264)
+        ;
+
+        
+    
+    
+            var circle_marker_573b4702ddaa8409bf42ee561272f664 = L.circleMarker(
+                [12.991665958945687, 77.59420704126842],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.9156626506024095, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_7cf488ebf6d46b2ade695e9746656d9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58715798f80fef679190f90acb19d855 = $(`<div id="html_58715798f80fef679190f90acb19d855" style="width: 100.0%; height: 100.0%;">46 Millers Road, Bangalore, Karnātaka, India</div>`)[0];
+                popup_7cf488ebf6d46b2ade695e9746656d9e.setContent(html_58715798f80fef679190f90acb19d855);
+            
+        
+
+        circle_marker_573b4702ddaa8409bf42ee561272f664.bindPopup(popup_7cf488ebf6d46b2ade695e9746656d9e)
+        ;
+
+        
+    
+    
+            var circle_marker_55391f04c92d91ef478dc97673331cc6 = L.circleMarker(
+                [12.967478847122125, 77.60175515707783],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.674698795180722, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_85270b0533bbbe0fcc7ae6bd5fe63591 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61b061b435cb2d71eb001e794e9c654d = $(`<div id="html_61b061b435cb2d71eb001e794e9c654d" style="width: 100.0%; height: 100.0%;">99 Residency Rd, Bangalore 560025, Karnātaka, India</div>`)[0];
+                popup_85270b0533bbbe0fcc7ae6bd5fe63591.setContent(html_61b061b435cb2d71eb001e794e9c654d);
+            
+        
+
+        circle_marker_55391f04c92d91ef478dc97673331cc6.bindPopup(popup_85270b0533bbbe0fcc7ae6bd5fe63591)
+        ;
+
+        
+    
+    
+            var circle_marker_50229416ddcad18f7ee887915560d629 = L.circleMarker(
+                [12.972979021383468, 77.59997124258985],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.385542168674698, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_22f62f239e6f284c741a65bb9c4709f0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ea74d7770e3e9b3ae1d747343b024c9 = $(`<div id="html_0ea74d7770e3e9b3ae1d747343b024c9" style="width: 100.0%; height: 100.0%;">at Lavelle Rd. (Madras Bank Rd.), Bangalore, Karnātaka, India</div>`)[0];
+                popup_22f62f239e6f284c741a65bb9c4709f0.setContent(html_0ea74d7770e3e9b3ae1d747343b024c9);
+            
+        
+
+        circle_marker_50229416ddcad18f7ee887915560d629.bindPopup(popup_22f62f239e6f284c741a65bb9c4709f0)
+        ;
+
+        
+    
+    
+            var circle_marker_d98cfc543c59d51cf9fea79342a55921 = L.circleMarker(
+                [12.973457334267048, 77.61828850236205],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.795180722891565, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_d75ab77d095533e7574984f93ab044af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_57fc39354cbd085828c3e4b83c33eda9 = $(`<div id="html_57fc39354cbd085828c3e4b83c33eda9" style="width: 100.0%; height: 100.0%;">37-39 (Mahatma Gandhi Road), Bangalore 560001, Karnātaka, India</div>`)[0];
+                popup_d75ab77d095533e7574984f93ab044af.setContent(html_57fc39354cbd085828c3e4b83c33eda9);
+            
+        
+
+        circle_marker_d98cfc543c59d51cf9fea79342a55921.bindPopup(popup_d75ab77d095533e7574984f93ab044af)
+        ;
+
+        
+    
+    
+            var circle_marker_e41db4d66f4039d8f37bff74af3cf41e = L.circleMarker(
+                [12.970139599197337, 77.61085658133437],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.108433734939759, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_c506a8f9a9304ce10f26144daa5e67ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f23f7904d09d219ed06f2c62517d955 = $(`<div id="html_4f23f7904d09d219ed06f2c62517d955" style="width: 100.0%; height: 100.0%;">8, 3rd Flr., Allied Grande Plaza, Magrath Rd. (MG Rd.), Bangalore 560025, Karnātaka, India</div>`)[0];
+                popup_c506a8f9a9304ce10f26144daa5e67ef.setContent(html_4f23f7904d09d219ed06f2c62517d955);
+            
+        
+
+        circle_marker_e41db4d66f4039d8f37bff74af3cf41e.bindPopup(popup_c506a8f9a9304ce10f26144daa5e67ef)
+        ;
+
+        
+    
+    
+            var circle_marker_3610127e38a5d62feac8b6b2365f8a66 = L.circleMarker(
+                [12.989294925620966, 77.58111476898193],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.349397590361445, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_9594bb80eb9c03f1b6e3f0508e1273d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c80204f9f95a30959784e4c91aee31c = $(`<div id="html_5c80204f9f95a30959784e4c91aee31c" style="width: 100.0%; height: 100.0%;">Seshadripuram, Next to Hotel Grand Ashok (Kumarakrupa Rd,), Bangalore 560001, Karnātaka, India</div>`)[0];
+                popup_9594bb80eb9c03f1b6e3f0508e1273d9.setContent(html_5c80204f9f95a30959784e4c91aee31c);
+            
+        
+
+        circle_marker_3610127e38a5d62feac8b6b2365f8a66.bindPopup(popup_9594bb80eb9c03f1b6e3f0508e1273d9)
+        ;
+
+        
+    
+    
+            var circle_marker_7566e5496bd182906582388d106cbd95 = L.circleMarker(
+                [12.966741280202402, 77.60873291751892],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.963855421686747, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_6bb2fc8cfce41190f0ead32e05a0b736 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2cfb2fa9b1898b134abf393cdf972a52 = $(`<div id="html_2cfb2fa9b1898b134abf393cdf972a52" style="width: 100.0%; height: 100.0%;">14/1, Wood Street, Bangalore, Karnātaka, India</div>`)[0];
+                popup_6bb2fc8cfce41190f0ead32e05a0b736.setContent(html_2cfb2fa9b1898b134abf393cdf972a52);
+            
+        
+
+        circle_marker_7566e5496bd182906582388d106cbd95.bindPopup(popup_6bb2fc8cfce41190f0ead32e05a0b736)
+        ;
+
+        
+    
+    
+            var circle_marker_dc4d31ff4c940b6de345f173884c92a1 = L.circleMarker(
+                [12.953983362173314, 77.56886209640857],
+                {"bubblingMouseEvents": true, "color": "#8CD6A4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8CD6A4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.313253012048193, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_b5c2db317f123af0be4c63b311f73bee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c97dc41a3abe7f6af45f005966cde9d = $(`<div id="html_9c97dc41a3abe7f6af45f005966cde9d" style="width: 100.0%; height: 100.0%;">Near Shankar Math (Ranga Rao Rd, Shankarpuram, Basavanagudi), Bangalore 560004, Karnātaka, India</div>`)[0];
+                popup_b5c2db317f123af0be4c63b311f73bee.setContent(html_9c97dc41a3abe7f6af45f005966cde9d);
+            
+        
+
+        circle_marker_dc4d31ff4c940b6de345f173884c92a1.bindPopup(popup_b5c2db317f123af0be4c63b311f73bee)
+        ;
+
+        
+    
+    
+            var circle_marker_4eded985df78ba337fc17ee03b0374d4 = L.circleMarker(
+                [12.971061104390301, 77.59765717697385],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.674698795180722, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_879cbd5e2654cd3c359a325ef9f69ead = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0453c6c9c91d3a7a87052d7b0e24377a = $(`<div id="html_0453c6c9c91d3a7a87052d7b0e24377a" style="width: 100.0%; height: 100.0%;">20/2 Vittal Mallya Rd., Bangalore 560001, Karnātaka, India</div>`)[0];
+                popup_879cbd5e2654cd3c359a325ef9f69ead.setContent(html_0453c6c9c91d3a7a87052d7b0e24377a);
+            
+        
+
+        circle_marker_4eded985df78ba337fc17ee03b0374d4.bindPopup(popup_879cbd5e2654cd3c359a325ef9f69ead)
+        ;
+
+        
+    
+    
+            var circle_marker_7149cd46a43fa21ed7ba271735eaa31d = L.circleMarker(
+                [12.947282345541405, 77.57682384041209],
+                {"bubblingMouseEvents": true, "color": "#8CD6A4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8CD6A4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.771084337349397, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_c28297014463b22d83face5801cc86ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0424a1c21239f7e4e33e21ea46fa51fb = $(`<div id="html_0424a1c21239f7e4e33e21ea46fa51fb" style="width: 100.0%; height: 100.0%;">Kanakapura Road (Basavangudi), Bangalore, Karnātaka, India</div>`)[0];
+                popup_c28297014463b22d83face5801cc86ae.setContent(html_0424a1c21239f7e4e33e21ea46fa51fb);
+            
+        
+
+        circle_marker_7149cd46a43fa21ed7ba271735eaa31d.bindPopup(popup_c28297014463b22d83face5801cc86ae)
+        ;
+
+        
+    
+    
+            var circle_marker_e55482160b01522006fd0ad54c027c1e = L.circleMarker(
+                [12.998309485708504, 77.56945976452197],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.927710843373493, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_6412565f82996bac89e709f86997bad8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_51764cf5b7e69889c361f30b47ec7ac5 = $(`<div id="html_51764cf5b7e69889c361f30b47ec7ac5" style="width: 100.0%; height: 100.0%;">#154, Ground Flr (Margosa Road, Malleshwaram), Bangalore, Karnātaka, India</div>`)[0];
+                popup_6412565f82996bac89e709f86997bad8.setContent(html_51764cf5b7e69889c361f30b47ec7ac5);
+            
+        
+
+        circle_marker_e55482160b01522006fd0ad54c027c1e.bindPopup(popup_6412565f82996bac89e709f86997bad8)
+        ;
+
+        
+    
+    
+            var circle_marker_f4b4f4ed124fc458affe08bc67ec3dfc = L.circleMarker(
+                [12.991577953372982, 77.5545605063243],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.8915662650602405, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_863e7aa69b87f662ff3e6fd4af915f88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96b276315e29a02c272811701f8ea206 = $(`<div id="html_96b276315e29a02c272811701f8ea206" style="width: 100.0%; height: 100.0%;">68 1st Main Road, Rajajinagar, Bangalore, Karnātaka, India</div>`)[0];
+                popup_863e7aa69b87f662ff3e6fd4af915f88.setContent(html_96b276315e29a02c272811701f8ea206);
+            
+        
+
+        circle_marker_f4b4f4ed124fc458affe08bc67ec3dfc.bindPopup(popup_863e7aa69b87f662ff3e6fd4af915f88)
+        ;
+
+        
+    
+    
+            var circle_marker_484dd1f44adac761b6e4c19a4c9120a8 = L.circleMarker(
+                [12.999370572624446, 77.57132224515472],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.650602409638553, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_ebfe08275c256044a867bad2bf3edcf0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d81f932b49bc055e10b5f69c5ba15bf5 = $(`<div id="html_d81f932b49bc055e10b5f69c5ba15bf5" style="width: 100.0%; height: 100.0%;">Bangalore, Karnātaka, India</div>`)[0];
+                popup_ebfe08275c256044a867bad2bf3edcf0.setContent(html_d81f932b49bc055e10b5f69c5ba15bf5);
+            
+        
+
+        circle_marker_484dd1f44adac761b6e4c19a4c9120a8.bindPopup(popup_ebfe08275c256044a867bad2bf3edcf0)
+        ;
+
+        
+    
+    
+            var circle_marker_4c1b9df20b10d65ef1792f4a89ab5139 = L.circleMarker(
+                [12.972947919226808, 77.59983134872871],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.096385542168674, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_bd49870c2ea05b8da78ce6188ef0587e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6ced080924961c541b8ffc8d6ad07df1 = $(`<div id="html_6ced080924961c541b8ffc8d6ad07df1" style="width: 100.0%; height: 100.0%;">#4 (Madras Bank Rd), Bangalore 560001, Karnātaka, India</div>`)[0];
+                popup_bd49870c2ea05b8da78ce6188ef0587e.setContent(html_6ced080924961c541b8ffc8d6ad07df1);
+            
+        
+
+        circle_marker_4c1b9df20b10d65ef1792f4a89ab5139.bindPopup(popup_bd49870c2ea05b8da78ce6188ef0587e)
+        ;
+
+        
+    
+    
+            var circle_marker_a3f9aa4d5bcec371a06adb2197557f10 = L.circleMarker(
+                [12.974496161362197, 77.60711549239568],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.385542168674698, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_b870a61169f659473e028e1b930ef894 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25d7517ecab38134415d298fca6efeaa = $(`<div id="html_25d7517ecab38134415d298fca6efeaa" style="width: 100.0%; height: 100.0%;">#2 (Church Street, Ashok Nagar), Bangalore 560001, Karnātaka, India</div>`)[0];
+                popup_b870a61169f659473e028e1b930ef894.setContent(html_25d7517ecab38134415d298fca6efeaa);
+            
+        
+
+        circle_marker_a3f9aa4d5bcec371a06adb2197557f10.bindPopup(popup_b870a61169f659473e028e1b930ef894)
+        ;
+
+        
+    
+    
+            var circle_marker_72f48303291cda7d349c03252052133c = L.circleMarker(
+                [12.990805824871202, 77.61937349741783],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.469879518072289, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_11afdbc11f4c507f393c75306d9a85de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f48226cb9bc26c0801aff231f9313c6 = $(`<div id="html_8f48226cb9bc26c0801aff231f9313c6" style="width: 100.0%; height: 100.0%;">4th Floor, Skywalk (5/1, Assaye Rd), Bangalore, Karnātaka, India</div>`)[0];
+                popup_11afdbc11f4c507f393c75306d9a85de.setContent(html_8f48226cb9bc26c0801aff231f9313c6);
+            
+        
+
+        circle_marker_72f48303291cda7d349c03252052133c.bindPopup(popup_11afdbc11f4c507f393c75306d9a85de)
+        ;
+
+        
+    
+    
+            var circle_marker_20738035f54606a0a0f504742a09f915 = L.circleMarker(
+                [12.987669226149016, 77.54997826305166],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5783132530120483, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_f28f430e0f18d85ca4b71f399075da53 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_501201d12c1ac32946eff249fa08ae4d = $(`<div id="html_501201d12c1ac32946eff249fa08ae4d" style="width: 100.0%; height: 100.0%;">20th main, West of Cord Road (5th Block , Rajajinagar), Bangalore 560010, Karnātaka, India</div>`)[0];
+                popup_f28f430e0f18d85ca4b71f399075da53.setContent(html_501201d12c1ac32946eff249fa08ae4d);
+            
+        
+
+        circle_marker_20738035f54606a0a0f504742a09f915.bindPopup(popup_f28f430e0f18d85ca4b71f399075da53)
+        ;
+
+        
+    
+    
+            var circle_marker_f233ee2cc8c578679b34597ebdd8b277 = L.circleMarker(
+                [12.985484062294457, 77.54315786791148],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.879518072289157, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_b3ba56f7a1ccb44dd95070773500e8ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_90f453b7adbc7228451c80e5409a23f9 = $(`<div id="html_90f453b7adbc7228451c80e5409a23f9" style="width: 100.0%; height: 100.0%;">Basweshwarnagar, Bangalore, Karnātaka, India</div>`)[0];
+                popup_b3ba56f7a1ccb44dd95070773500e8ea.setContent(html_90f453b7adbc7228451c80e5409a23f9);
+            
+        
+
+        circle_marker_f233ee2cc8c578679b34597ebdd8b277.bindPopup(popup_b3ba56f7a1ccb44dd95070773500e8ea)
+        ;
+
+        
+    
+    
+            var circle_marker_699c7d606f78f91c6410e9188c6555ba = L.circleMarker(
+                [12.979367419317535, 77.64070245409556],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.08433734939759, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_c2608e25a6639d9cad2a739537a1976f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf8d69c61fa7048803ab578538aa1e99 = $(`<div id="html_cf8d69c61fa7048803ab578538aa1e99" style="width: 100.0%; height: 100.0%;">298, 100 Ft Rd, Indiranagar (at 100 Ft Rd), Bangalore 560038, Karnātaka, India</div>`)[0];
+                popup_c2608e25a6639d9cad2a739537a1976f.setContent(html_cf8d69c61fa7048803ab578538aa1e99);
+            
+        
+
+        circle_marker_699c7d606f78f91c6410e9188c6555ba.bindPopup(popup_c2608e25a6639d9cad2a739537a1976f)
+        ;
+
+        
+    
+    
+            var circle_marker_4aaedb13305e26481652431efeb696f5 = L.circleMarker(
+                [12.955122296207755, 77.58555184054242],
+                {"bubblingMouseEvents": true, "color": "#8CD6A4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8CD6A4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.734939759036145, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_5ad14fe6b406cd2cbcb40b3e75bb4363 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c3f189bb9a60cff6f1f60189dab0cfce = $(`<div id="html_c3f189bb9a60cff6f1f60189dab0cfce" style="width: 100.0%; height: 100.0%;">#14 (Lalbagh Rd), Bangalore 560027, Karnātaka, India</div>`)[0];
+                popup_5ad14fe6b406cd2cbcb40b3e75bb4363.setContent(html_c3f189bb9a60cff6f1f60189dab0cfce);
+            
+        
+
+        circle_marker_4aaedb13305e26481652431efeb696f5.bindPopup(popup_5ad14fe6b406cd2cbcb40b3e75bb4363)
+        ;
+
+        
+    
+    
+            var circle_marker_c2d13ab5c64b7d918c12c8794f061431 = L.circleMarker(
+                [13.011313244706537, 77.55503923754937],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.192771084337349, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_1187780aefd767922c0ed848be8dbd4f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a98b679d5ddaedc99e3f433a4305f55e = $(`<div id="html_a98b679d5ddaedc99e3f433a4305f55e" style="width: 100.0%; height: 100.0%;">#26/1 (Dr. Rajkumar Rd, Rajajinagar), Bangalore 560055, Karnātaka, India</div>`)[0];
+                popup_1187780aefd767922c0ed848be8dbd4f.setContent(html_a98b679d5ddaedc99e3f433a4305f55e);
+            
+        
+
+        circle_marker_c2d13ab5c64b7d918c12c8794f061431.bindPopup(popup_1187780aefd767922c0ed848be8dbd4f)
+        ;
+
+        
+    
+    
+            var circle_marker_4580024354a7c3b70f43584ebd821e36 = L.circleMarker(
+                [12.932947240497668, 77.5825363305544],
+                {"bubblingMouseEvents": true, "color": "#8CD6A4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8CD6A4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.409638554216867, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_eae2ff31631c3853e3fac1fc5240e22e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81cef2e49c69d78acdb1157364458c83 = $(`<div id="html_81cef2e49c69d78acdb1157364458c83" style="width: 100.0%; height: 100.0%;">8th main (3rd block jayanagar), Bangalore 560011, Karnātaka, India</div>`)[0];
+                popup_eae2ff31631c3853e3fac1fc5240e22e.setContent(html_81cef2e49c69d78acdb1157364458c83);
+            
+        
+
+        circle_marker_4580024354a7c3b70f43584ebd821e36.bindPopup(popup_eae2ff31631c3853e3fac1fc5240e22e)
+        ;
+
+        
+    
+    
+            var circle_marker_9067d920b224b3b5a2de6b580344ade7 = L.circleMarker(
+                [12.97816520071199, 77.64160653370463],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.686746987951807, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_5757aa5519758df26e374e9bc35eccca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4fa7f0ad4d48519d9d9d270ae2c2e79d = $(`<div id="html_4fa7f0ad4d48519d9d9d270ae2c2e79d" style="width: 100.0%; height: 100.0%;">CMH Road (3rd Cross), Bangalore 560038, Karnātaka, India</div>`)[0];
+                popup_5757aa5519758df26e374e9bc35eccca.setContent(html_4fa7f0ad4d48519d9d9d270ae2c2e79d);
+            
+        
+
+        circle_marker_9067d920b224b3b5a2de6b580344ade7.bindPopup(popup_5757aa5519758df26e374e9bc35eccca)
+        ;
+
+        
+    
+    
+            var circle_marker_f639e0e827cc14bb6cc66725121365f3 = L.circleMarker(
+                [12.96997259210254, 77.6374526658063],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.674698795180722, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_22b59d87ea2c267f1d337d1beb167176 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_79f8cba98cd62a766ecdc945f317c690 = $(`<div id="html_79f8cba98cd62a766ecdc945f317c690" style="width: 100.0%; height: 100.0%;">#3289 (12th Main, HAL 2nd Stg, Indiranagar), Bangalore 560038, Karnātaka, India</div>`)[0];
+                popup_22b59d87ea2c267f1d337d1beb167176.setContent(html_79f8cba98cd62a766ecdc945f317c690);
+            
+        
+
+        circle_marker_f639e0e827cc14bb6cc66725121365f3.bindPopup(popup_22b59d87ea2c267f1d337d1beb167176)
+        ;
+
+        
+    
+    
+            var circle_marker_6b73f50c32aa038b7c000dbd59b37b38 = L.circleMarker(
+                [12.93344282897595, 77.61426454051069],
+                {"bubblingMouseEvents": true, "color": "#8CD6A4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8CD6A4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.421686746987952, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_c0f0e65d5da8822160bb31c1503661ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2db564991db7ef98dde10e3be3405938 = $(`<div id="html_2db564991db7ef98dde10e3be3405938" style="width: 100.0%; height: 100.0%;">"#28 (4th B Crs, 5th Blk, Koramangala)", Bangalore 560095, Karnātaka, India</div>`)[0];
+                popup_c0f0e65d5da8822160bb31c1503661ae.setContent(html_2db564991db7ef98dde10e3be3405938);
+            
+        
+
+        circle_marker_6b73f50c32aa038b7c000dbd59b37b38.bindPopup(popup_c0f0e65d5da8822160bb31c1503661ae)
+        ;
+
+        
+    
+    
+            var circle_marker_6ecb9020f3707744d7bede08c092da55 = L.circleMarker(
+                [12.970324618320749, 77.57264765624994],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.445783132530121, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_685bded62d6599aca4333ef959414493 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2ab677f12a1c61e7048bf251f2a9916 = $(`<div id="html_d2ab677f12a1c61e7048bf251f2a9916" style="width: 100.0%; height: 100.0%;">Bangalore, Karnātaka, India</div>`)[0];
+                popup_685bded62d6599aca4333ef959414493.setContent(html_d2ab677f12a1c61e7048bf251f2a9916);
+            
+        
+
+        circle_marker_6ecb9020f3707744d7bede08c092da55.bindPopup(popup_685bded62d6599aca4333ef959414493)
+        ;
+
+        
+    
+    
+            var circle_marker_a3ae854752dc1ab12d44915c9b66726f = L.circleMarker(
+                [12.937289153464818, 77.61759086840642],
+                {"bubblingMouseEvents": true, "color": "#8CD6A4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8CD6A4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.987951807228916, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_41b2c655f449e1cdbf9f274f6b2f8390 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d9e6b18768c092554445815106e2afa = $(`<div id="html_5d9e6b18768c092554445815106e2afa" style="width: 100.0%; height: 100.0%;">No. 23, MIG, Opposite Mangala Kalyana Mantapa, KHB Colony (Koramangala 8th block), Bangalore 560095, Karnātaka, India</div>`)[0];
+                popup_41b2c655f449e1cdbf9f274f6b2f8390.setContent(html_5d9e6b18768c092554445815106e2afa);
+            
+        
+
+        circle_marker_a3ae854752dc1ab12d44915c9b66726f.bindPopup(popup_41b2c655f449e1cdbf9f274f6b2f8390)
+        ;
+
+        
+    
+    
+            var circle_marker_51dc6ff279ad6cad06b5e67ed198ffc0 = L.circleMarker(
+                [12.97156265323936, 77.57415757477479],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.879518072289157, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_8a311bafee58ffbde96bb1d0efd9f893 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c77a96d311e71a199b56801945c9f31 = $(`<div id="html_9c77a96d311e71a199b56801945c9f31" style="width: 100.0%; height: 100.0%;">Balepet, Bangalore, Karnātaka, India</div>`)[0];
+                popup_8a311bafee58ffbde96bb1d0efd9f893.setContent(html_9c77a96d311e71a199b56801945c9f31);
+            
+        
+
+        circle_marker_51dc6ff279ad6cad06b5e67ed198ffc0.bindPopup(popup_8a311bafee58ffbde96bb1d0efd9f893)
+        ;
+
+        
+    
+    
+            var circle_marker_fa714ab7c62703e3f087d59f6dd18839 = L.circleMarker(
+                [12.973144974771415, 77.60926282792666],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.096385542168674, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_5423f96153fe01a3504a78b62b3e03a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed7c0941ac09abfdb46a9c9cab766103 = $(`<div id="html_ed7c0941ac09abfdb46a9c9cab766103" style="width: 100.0%; height: 100.0%;">Residency Road, Bangalore, Karnātaka, India</div>`)[0];
+                popup_5423f96153fe01a3504a78b62b3e03a0.setContent(html_ed7c0941ac09abfdb46a9c9cab766103);
+            
+        
+
+        circle_marker_fa714ab7c62703e3f087d59f6dd18839.bindPopup(popup_5423f96153fe01a3504a78b62b3e03a0)
+        ;
+
+        
+    
+    
+            var circle_marker_fab401ea059a90036534a97441816c8a = L.circleMarker(
+                [12.9609277177971, 77.64855594251874],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.686746987951807, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_ec0ebee7a739b2997ceb947917e4be49 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f8b3e76374da0cb68dca19e056e8839 = $(`<div id="html_8f8b3e76374da0cb68dca19e056e8839" style="width: 100.0%; height: 100.0%;">23, Old Airport Rd, Bangalore 560008, Karnātaka, India</div>`)[0];
+                popup_ec0ebee7a739b2997ceb947917e4be49.setContent(html_8f8b3e76374da0cb68dca19e056e8839);
+            
+        
+
+        circle_marker_fab401ea059a90036534a97441816c8a.bindPopup(popup_ec0ebee7a739b2997ceb947917e4be49)
+        ;
+
+        
+    
+    
+            var circle_marker_cd54ee43e07deff8516936856b59ae70 = L.circleMarker(
+                [12.950955903168275, 77.5777977324465],
+                {"bubblingMouseEvents": true, "color": "#8CD6A4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8CD6A4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.325301204819277, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_1050ec9a9d9d08a04a7d407140515f8d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6281f6c83ebcd3f8ebd71090eddb6f1d = $(`<div id="html_6281f6c83ebcd3f8ebd71090eddb6f1d" style="width: 100.0%; height: 100.0%;">Near Sajjan Rao Park (V.V Puram), Bangalore 560004, Karnātaka, India</div>`)[0];
+                popup_1050ec9a9d9d08a04a7d407140515f8d.setContent(html_6281f6c83ebcd3f8ebd71090eddb6f1d);
+            
+        
+
+        circle_marker_cd54ee43e07deff8516936856b59ae70.bindPopup(popup_1050ec9a9d9d08a04a7d407140515f8d)
+        ;
+
+        
+    
+    
+            var circle_marker_112a81e02e4cee7a7b3a8cc2faf46a0c = L.circleMarker(
+                [12.922836198293112, 77.59341467506862],
+                {"bubblingMouseEvents": true, "color": "#8CD6A4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8CD6A4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.650602409638553, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_48599c3444d55df78f27e9243d99e5b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_faef090df38dcfd67fe81b548d1ee0a3 = $(`<div id="html_faef090df38dcfd67fe81b548d1ee0a3" style="width: 100.0%; height: 100.0%;">Next to HDFC BANK, Near SSMRV College (26th Main Rd), Bangalore 560041, Karnātaka, India</div>`)[0];
+                popup_48599c3444d55df78f27e9243d99e5b4.setContent(html_faef090df38dcfd67fe81b548d1ee0a3);
+            
+        
+
+        circle_marker_112a81e02e4cee7a7b3a8cc2faf46a0c.bindPopup(popup_48599c3444d55df78f27e9243d99e5b4)
+        ;
+
+        
+    
+    
+            var circle_marker_fc2daedf302b633418735ed1376135b5 = L.circleMarker(
+                [13.010923124966338, 77.55501011161395],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.481927710843373, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_2dd70ad75e98354cdd4df6c297e8d0c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02fc710a9f7a6af7696f844f0d9060f5 = $(`<div id="html_02fc710a9f7a6af7696f844f0d9060f5" style="width: 100.0%; height: 100.0%;">India</div>`)[0];
+                popup_2dd70ad75e98354cdd4df6c297e8d0c4.setContent(html_02fc710a9f7a6af7696f844f0d9060f5);
+            
+        
+
+        circle_marker_fc2daedf302b633418735ed1376135b5.bindPopup(popup_2dd70ad75e98354cdd4df6c297e8d0c4)
+        ;
+
+        
+    
+    
+            var circle_marker_02524a93b8b2af241eb2c00360f55124 = L.circleMarker(
+                [12.977935019869102, 77.5999379072286],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.240963855421686, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_99def031496694bebe9174e2268aa126 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78344364260649a9bce9bbc44236d22d = $(`<div id="html_78344364260649a9bce9bbc44236d22d" style="width: 100.0%; height: 100.0%;">Chinnaswamy Stadium, Bangalore, Karnātaka, India</div>`)[0];
+                popup_99def031496694bebe9174e2268aa126.setContent(html_78344364260649a9bce9bbc44236d22d);
+            
+        
+
+        circle_marker_02524a93b8b2af241eb2c00360f55124.bindPopup(popup_99def031496694bebe9174e2268aa126)
+        ;
+
+        
+    
+    
+            var circle_marker_f71a9aca2cd68553692358ef428bfe69 = L.circleMarker(
+                [12.933537109665405, 77.6218620764095],
+                {"bubblingMouseEvents": true, "color": "#8CD6A4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8CD6A4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_a5221ba95699076b8b331b98858ec1a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6467de2c85d0c68ceae1efe66d0187fd = $(`<div id="html_6467de2c85d0c68ceae1efe66d0187fd" style="width: 100.0%; height: 100.0%;">1st Cross, 5th A Block (Koramangala), Bangalore 560095, Karnātaka, India</div>`)[0];
+                popup_a5221ba95699076b8b331b98858ec1a7.setContent(html_6467de2c85d0c68ceae1efe66d0187fd);
+            
+        
+
+        circle_marker_f71a9aca2cd68553692358ef428bfe69.bindPopup(popup_a5221ba95699076b8b331b98858ec1a7)
+        ;
+
+        
+    
+    
+            var circle_marker_64cba8120bf1a9cfba64c35918d76cf6 = L.circleMarker(
+                [13.0125129, 77.5552546],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.759036144578313, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_0a0134e7df3414243ac28fd2d67200f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d6b27f3ed6ab23308ef1b7f9eca8ad8 = $(`<div id="html_2d6b27f3ed6ab23308ef1b7f9eca8ad8" style="width: 100.0%; height: 100.0%;">26/1 Dr. Rajkumar Road, Malleswaram-Rajajinagar, Bangalore 560055, Karnātaka, India</div>`)[0];
+                popup_0a0134e7df3414243ac28fd2d67200f1.setContent(html_2d6b27f3ed6ab23308ef1b7f9eca8ad8);
+            
+        
+
+        circle_marker_64cba8120bf1a9cfba64c35918d76cf6.bindPopup(popup_0a0134e7df3414243ac28fd2d67200f1)
+        ;
+
+        
+    
+    
+            var circle_marker_75e85ce9bb400a290afff6afe89964d7 = L.circleMarker(
+                [12.9083716531078, 77.58722416064232],
+                {"bubblingMouseEvents": true, "color": "#8CD6A4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8CD6A4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.08433734939759, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_de2c7cf78ca051cd34f6466016a98358 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5f1427707e48ee6f42b52766a1b7ed03 = $(`<div id="html_5f1427707e48ee6f42b52766a1b7ed03" style="width: 100.0%; height: 100.0%;">12th Cross, 22nd Main, J P Nagar 2nd Phase, Bangalore 560078, Karnātaka, India</div>`)[0];
+                popup_de2c7cf78ca051cd34f6466016a98358.setContent(html_5f1427707e48ee6f42b52766a1b7ed03);
+            
+        
+
+        circle_marker_75e85ce9bb400a290afff6afe89964d7.bindPopup(popup_de2c7cf78ca051cd34f6466016a98358)
+        ;
+
+        
+    
+    
+            var circle_marker_2582cf93b014895a054bbaa40efb4e2a = L.circleMarker(
+                [12.948948480114318, 77.58695125579834],
+                {"bubblingMouseEvents": true, "color": "#8CD6A4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8CD6A4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.156626506024097, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_41186fa7b4e20ab47e9f44cbac8baba2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95c756d16d25a7d4f14b7a7654a57637 = $(`<div id="html_95c756d16d25a7d4f14b7a7654a57637" style="width: 100.0%; height: 100.0%;">Lalbagh Road, Bangalore 560004, Karnātaka, India</div>`)[0];
+                popup_41186fa7b4e20ab47e9f44cbac8baba2.setContent(html_95c756d16d25a7d4f14b7a7654a57637);
+            
+        
+
+        circle_marker_2582cf93b014895a054bbaa40efb4e2a.bindPopup(popup_41186fa7b4e20ab47e9f44cbac8baba2)
+        ;
+
+        
+    
+    
+            var circle_marker_2f1fac15c8675667fb1e735cc4469e15 = L.circleMarker(
+                [12.961605849068574, 77.64845462485508],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.975903614457831, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_cf9ecb8140dfb61f626b6bdcda045613 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb2fa33607e98cb85bf33f37da672f64 = $(`<div id="html_fb2fa33607e98cb85bf33f37da672f64" style="width: 100.0%; height: 100.0%;">#23, The Leela Palace (Old Airport Rd), Bangalore 560017, Karnātaka, India</div>`)[0];
+                popup_cf9ecb8140dfb61f626b6bdcda045613.setContent(html_fb2fa33607e98cb85bf33f37da672f64);
+            
+        
+
+        circle_marker_2f1fac15c8675667fb1e735cc4469e15.bindPopup(popup_cf9ecb8140dfb61f626b6bdcda045613)
+        ;
+
+        
+    
+    
+            var circle_marker_55d9b3c7340a5e2828d593fcaddc7ef6 = L.circleMarker(
+                [12.92443909349938, 77.56484835514232],
+                {"bubblingMouseEvents": true, "color": "#8CD6A4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8CD6A4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.325301204819277, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_bfac1b7e234009761bc704707d0ea29b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c26e0fe0a1641fd37aef4cad0cab41fa = $(`<div id="html_c26e0fe0a1641fd37aef4cad0cab41fa" style="width: 100.0%; height: 100.0%;">Opp. BDA Complex (Bsk 2 Nd Stage), Bangalore, Karnātaka, India</div>`)[0];
+                popup_bfac1b7e234009761bc704707d0ea29b.setContent(html_c26e0fe0a1641fd37aef4cad0cab41fa);
+            
+        
+
+        circle_marker_55d9b3c7340a5e2828d593fcaddc7ef6.bindPopup(popup_bfac1b7e234009761bc704707d0ea29b)
+        ;
+
+        
+    
+    
+            var circle_marker_13b33adebab3a622fb8f558df442da43 = L.circleMarker(
+                [13.00564208436113, 77.56920735021443],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.048192771084337, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_5aa9781c99e3eac4e1e8cca0b0abb6b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2488be0018067610e0488403b89f8418 = $(`<div id="html_2488be0018067610e0488403b89f8418" style="width: 100.0%; height: 100.0%;">Margosa Rd (15th Cross, Malleshwaram), Bangalore 560003, Karnātaka, India</div>`)[0];
+                popup_5aa9781c99e3eac4e1e8cca0b0abb6b8.setContent(html_2488be0018067610e0488403b89f8418);
+            
+        
+
+        circle_marker_13b33adebab3a622fb8f558df442da43.bindPopup(popup_5aa9781c99e3eac4e1e8cca0b0abb6b8)
+        ;
+
+        
+    
+    
+            var circle_marker_bc1e1d818406c8b2912035527dce8850 = L.circleMarker(
+                [12.917455111168643, 77.59328023350446],
+                {"bubblingMouseEvents": true, "color": "#8CD6A4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8CD6A4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.80722891566265, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_aa37e78fde21508d92ca85b28aae82c3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7ff7a97511e6204c96b7382bac25109 = $(`<div id="html_c7ff7a97511e6204c96b7382bac25109" style="width: 100.0%; height: 100.0%;">#1225, Near Ragi Gudda Temple (26th Main, 9th Blk, Jayanagar), Bangalore 560069, Karnātaka, India</div>`)[0];
+                popup_aa37e78fde21508d92ca85b28aae82c3.setContent(html_c7ff7a97511e6204c96b7382bac25109);
+            
+        
+
+        circle_marker_bc1e1d818406c8b2912035527dce8850.bindPopup(popup_aa37e78fde21508d92ca85b28aae82c3)
+        ;
+
+        
+    
+    
+            var circle_marker_6da25017953516fc56554d48e6eaba0c = L.circleMarker(
+                [12.979096175904914, 77.64406308459338],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.096385542168674, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_8040a572f834d8a8169284cc272efce0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e9f913a9e5380d53b1e8018c4ac3a32 = $(`<div id="html_1e9f913a9e5380d53b1e8018c4ac3a32" style="width: 100.0%; height: 100.0%;">Bangalore, Karnātaka, India</div>`)[0];
+                popup_8040a572f834d8a8169284cc272efce0.setContent(html_1e9f913a9e5380d53b1e8018c4ac3a32);
+            
+        
+
+        circle_marker_6da25017953516fc56554d48e6eaba0c.bindPopup(popup_8040a572f834d8a8169284cc272efce0)
+        ;
+
+        
+    
+    
+            var circle_marker_17e05194f3e4d0f81607fe8307407e38 = L.circleMarker(
+                [12.982884591952303, 77.5488088370366],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.590361445783133, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_e14e041fab01428794fc0ab84cd47adf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37fd1e7e039306939c897f3c79a5be76 = $(`<div id="html_37fd1e7e039306939c897f3c79a5be76" style="width: 100.0%; height: 100.0%;">West of Card Road (Rajajinagar), Bangalore, Karnātaka, India</div>`)[0];
+                popup_e14e041fab01428794fc0ab84cd47adf.setContent(html_37fd1e7e039306939c897f3c79a5be76);
+            
+        
+
+        circle_marker_17e05194f3e4d0f81607fe8307407e38.bindPopup(popup_e14e041fab01428794fc0ab84cd47adf)
+        ;
+
+        
+    
+    
+            var circle_marker_e0fa2225ca9820424f25a0e4f48dd38f = L.circleMarker(
+                [13.01126087435231, 77.5550342993936],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.337349397590361, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_4ac99c271e6963af107f75855293eec5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dfd7d7c3f7495633b9ad569dd3120e8d = $(`<div id="html_dfd7d7c3f7495633b9ad569dd3120e8d" style="width: 100.0%; height: 100.0%;">26/1 Dr. Rajkumar Road, Bangalore 560055, Karnātaka, India</div>`)[0];
+                popup_4ac99c271e6963af107f75855293eec5.setContent(html_dfd7d7c3f7495633b9ad569dd3120e8d);
+            
+        
+
+        circle_marker_e0fa2225ca9820424f25a0e4f48dd38f.bindPopup(popup_4ac99c271e6963af107f75855293eec5)
+        ;
+
+        
+    
+    
+            var circle_marker_78c0c6170fb75c39249226a980e2d43e = L.circleMarker(
+                [12.945081590068911, 77.57141473329507],
+                {"bubblingMouseEvents": true, "color": "#8CD6A4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8CD6A4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.36144578313253, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_4c5433421bfa0b4d4dce3df88d4e32c5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9eb5c1e63b67e11d1b2ec0f9aa94121 = $(`<div id="html_f9eb5c1e63b67e11d1b2ec0f9aa94121" style="width: 100.0%; height: 100.0%;">#32 (Gandhi Bazaar Rd), Bangalore 560004, Karnātaka, India</div>`)[0];
+                popup_4c5433421bfa0b4d4dce3df88d4e32c5.setContent(html_f9eb5c1e63b67e11d1b2ec0f9aa94121);
+            
+        
+
+        circle_marker_78c0c6170fb75c39249226a980e2d43e.bindPopup(popup_4c5433421bfa0b4d4dce3df88d4e32c5)
+        ;
+
+        
+    
+    
+            var circle_marker_db0b449b9982feae5bb05500bd274d82 = L.circleMarker(
+                [12.99148884145578, 77.61432761833794],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.638554216867469, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_c6aaa70754da2eac814a4c3615b48395 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7feb8eded7b935d91b99044bcc20af84 = $(`<div id="html_7feb8eded7b935d91b99044bcc20af84" style="width: 100.0%; height: 100.0%;">1/2, Wheelers Road (Near the East End Petrol Pump, Frazer Town), Bangalore 560005, Karnātaka, India</div>`)[0];
+                popup_c6aaa70754da2eac814a4c3615b48395.setContent(html_7feb8eded7b935d91b99044bcc20af84);
+            
+        
+
+        circle_marker_db0b449b9982feae5bb05500bd274d82.bindPopup(popup_c6aaa70754da2eac814a4c3615b48395)
+        ;
+
+        
+    
+    
+            var circle_marker_1aa7d4803ab15b890e110581474191d4 = L.circleMarker(
+                [12.948375239218151, 77.64568176215869],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.8915662650602405, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_ea553f86b71c0e0d20be157931ba152c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8cdab89eead51e820071c1e902d99ef1 = $(`<div id="html_8cdab89eead51e820071c1e902d99ef1" style="width: 100.0%; height: 100.0%;">Embassy Golf Links Business Park (Off Intermediate Ring Road), Bangalore 560071, Karnātaka, India</div>`)[0];
+                popup_ea553f86b71c0e0d20be157931ba152c.setContent(html_8cdab89eead51e820071c1e902d99ef1);
+            
+        
+
+        circle_marker_1aa7d4803ab15b890e110581474191d4.bindPopup(popup_ea553f86b71c0e0d20be157931ba152c)
+        ;
+
+        
+    
+    
+            var circle_marker_3d6461d9d3fdbe650fbafb517fb5bc35 = L.circleMarker(
+                [13.000798558901932, 77.56392365936823],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.180722891566265, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_a0f13358b2ddf9192dbea3c4fb4e1c93 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_38d2396447a4a53a6fa49aa58dcbb17f = $(`<div id="html_38d2396447a4a53a6fa49aa58dcbb17f" style="width: 100.0%; height: 100.0%;">Outside Malleswaram Station (2nd Cross Margosa Road), Bangalore 560 003, Karnātaka, India</div>`)[0];
+                popup_a0f13358b2ddf9192dbea3c4fb4e1c93.setContent(html_38d2396447a4a53a6fa49aa58dcbb17f);
+            
+        
+
+        circle_marker_3d6461d9d3fdbe650fbafb517fb5bc35.bindPopup(popup_a0f13358b2ddf9192dbea3c4fb4e1c93)
+        ;
+
+        
+    
+    
+            var circle_marker_262911783d5b4a7c95a88e4ae2019017 = L.circleMarker(
+                [13.021024892749804, 77.64265511183932],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.216867469879517, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_39f029b6cd1fb49a6df30bbc74715e27 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0638c9e08c652d4b01f8716e21f2e30 = $(`<div id="html_b0638c9e08c652d4b01f8716e21f2e30" style="width: 100.0%; height: 100.0%;">Kammanahalli Main Road (Kammanahalli), Bangalore, Karnātaka, India</div>`)[0];
+                popup_39f029b6cd1fb49a6df30bbc74715e27.setContent(html_b0638c9e08c652d4b01f8716e21f2e30);
+            
+        
+
+        circle_marker_262911783d5b4a7c95a88e4ae2019017.bindPopup(popup_39f029b6cd1fb49a6df30bbc74715e27)
+        ;
+
+        
+    
+    
+            var circle_marker_bbd7512d7288407b072d7db23c2fe0d5 = L.circleMarker(
+                [13.011197511086094, 77.55505736954053],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.481927710843373, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_115c7c43f1917c23591e56ff509a0920 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39a9b058dde76fba5f64e5b4e0f05636 = $(`<div id="html_39a9b058dde76fba5f64e5b4e0f05636" style="width: 100.0%; height: 100.0%;">4th Flr, Orion Mall (Rajajinagar), Bangalore 560055, Karnātaka, India</div>`)[0];
+                popup_115c7c43f1917c23591e56ff509a0920.setContent(html_39a9b058dde76fba5f64e5b4e0f05636);
+            
+        
+
+        circle_marker_bbd7512d7288407b072d7db23c2fe0d5.bindPopup(popup_115c7c43f1917c23591e56ff509a0920)
+        ;
+
+        
+    
+    
+            var circle_marker_23e5aeb6c4c0b815eea1500d1db089b6 = L.circleMarker(
+                [13.010800728380858, 77.55500467509675],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.481927710843373, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_f97ef5377e21b262e7f96873a862d57b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3548fa3aac3c8619eb26342ef6895d16 = $(`<div id="html_3548fa3aac3c8619eb26342ef6895d16" style="width: 100.0%; height: 100.0%;">ORION Mall, Brigade Gateway (26/1, Dr.Rajkumar Road, Rajaji Nagar), Bangalore 560025, Karnātaka, India</div>`)[0];
+                popup_f97ef5377e21b262e7f96873a862d57b.setContent(html_3548fa3aac3c8619eb26342ef6895d16);
+            
+        
+
+        circle_marker_23e5aeb6c4c0b815eea1500d1db089b6.bindPopup(popup_f97ef5377e21b262e7f96873a862d57b)
+        ;
+
+        
+    
+    
+            var circle_marker_013c56dba2c66fed2693ecc17c261547 = L.circleMarker(
+                [12.987460410046083, 77.61894240596101],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.024096385542169, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_67d3d0b54c2ac2f701cd09c23a06d388 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_da476450bf23c39b9ddf962e837f13ce = $(`<div id="html_da476450bf23c39b9ddf962e837f13ce" style="width: 100.0%; height: 100.0%;">Kensington Rd, Halasuru, (Ulsoor), Bangalore, Karnātaka, India</div>`)[0];
+                popup_67d3d0b54c2ac2f701cd09c23a06d388.setContent(html_da476450bf23c39b9ddf962e837f13ce);
+            
+        
+
+        circle_marker_013c56dba2c66fed2693ecc17c261547.bindPopup(popup_67d3d0b54c2ac2f701cd09c23a06d388)
+        ;
+
+        
+    
+    
+            var circle_marker_086ffda5e0b4bdce140cb371d3b26c50 = L.circleMarker(
+                [12.990234880192782, 77.53801956889775],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.734939759036145, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_53c78dcb3984ef0a8fe6e1c26fac2d5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d20055cf0728735a1cfe58aa6fc67159 = $(`<div id="html_d20055cf0728735a1cfe58aa6fc67159" style="width: 100.0%; height: 100.0%;">Bangalore, Karnātaka, India</div>`)[0];
+                popup_53c78dcb3984ef0a8fe6e1c26fac2d5b.setContent(html_d20055cf0728735a1cfe58aa6fc67159);
+            
+        
+
+        circle_marker_086ffda5e0b4bdce140cb371d3b26c50.bindPopup(popup_53c78dcb3984ef0a8fe6e1c26fac2d5b)
+        ;
+
+        
+    
+    
+            var circle_marker_af9a03e4ccb2511dbe7ce8b0ba7a0153 = L.circleMarker(
+                [12.909948588084937, 77.65188251591857],
+                {"bubblingMouseEvents": true, "color": "#8CD6A4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8CD6A4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.06024096385542, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_9b65292f0a3c26680248d1a9f998ecc6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1566faa25d6c07bd2c0020648e8de8cf = $(`<div id="html_1566faa25d6c07bd2c0020648e8de8cf" style="width: 100.0%; height: 100.0%;">#1666, HSR layout (Sector 2, HSR Layout, 27th Main Rd), Bangalore 560102, Karnātaka, India</div>`)[0];
+                popup_9b65292f0a3c26680248d1a9f998ecc6.setContent(html_1566faa25d6c07bd2c0020648e8de8cf);
+            
+        
+
+        circle_marker_af9a03e4ccb2511dbe7ce8b0ba7a0153.bindPopup(popup_9b65292f0a3c26680248d1a9f998ecc6)
+        ;
+
+        
+    
+    
+            var circle_marker_871260c0a2ca244f5c3488b9c412b820 = L.circleMarker(
+                [12.964765741776635, 77.53886512623342],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.8674698795180724, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_ea1da3ab280585725beaac674b2989a9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b79f97b93b9bf727b4ac094cd83bbaed = $(`<div id="html_b79f97b93b9bf727b4ac094cd83bbaed" style="width: 100.0%; height: 100.0%;">172 Nagarabhavi Main Road, Govindaraja Nagar, Vijay, Bangalore, Karnātaka, India</div>`)[0];
+                popup_ea1da3ab280585725beaac674b2989a9.setContent(html_b79f97b93b9bf727b4ac094cd83bbaed);
+            
+        
+
+        circle_marker_871260c0a2ca244f5c3488b9c412b820.bindPopup(popup_ea1da3ab280585725beaac674b2989a9)
+        ;
+
+        
+    
+    
+            var circle_marker_c3df8d6d1963f3ec5321dfc518f166e9 = L.circleMarker(
+                [12.963908917512304, 77.63857909555004],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.686746987951807, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_e5701433ff918e892f555847afb728ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64178493f3f4736572c76d5de53fd3f1 = $(`<div id="html_64178493f3f4736572c76d5de53fd3f1" style="width: 100.0%; height: 100.0%;">No.151 (2nd Cross, Domlur, 2nd Stage), Bangalore 560071, Karnātaka, India</div>`)[0];
+                popup_e5701433ff918e892f555847afb728ab.setContent(html_64178493f3f4736572c76d5de53fd3f1);
+            
+        
+
+        circle_marker_c3df8d6d1963f3ec5321dfc518f166e9.bindPopup(popup_e5701433ff918e892f555847afb728ab)
+        ;
+
+        
+    
+    
+            var circle_marker_2039ac56bd1717fce384665b5d697241 = L.circleMarker(
+                [12.917918586021823, 77.57392499315985],
+                {"bubblingMouseEvents": true, "color": "#8CD6A4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8CD6A4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.734939759036145, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_effe9cfdac7e174262b2b3667a7f7cbf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7774bf5aa628717971b63c9921c5013 = $(`<div id="html_f7774bf5aa628717971b63c9921c5013" style="width: 100.0%; height: 100.0%;">Banashankari, Bangalore, Karnātaka, India</div>`)[0];
+                popup_effe9cfdac7e174262b2b3667a7f7cbf.setContent(html_f7774bf5aa628717971b63c9921c5013);
+            
+        
+
+        circle_marker_2039ac56bd1717fce384665b5d697241.bindPopup(popup_effe9cfdac7e174262b2b3667a7f7cbf)
+        ;
+
+        
+    
+    
+            var circle_marker_099061c4160d350a5c0212ee958792ae = L.circleMarker(
+                [12.948474983379796, 77.64551608842699],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.036144578313253, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_508cb39dda9a7e5d46b2e6497f00c3b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b40619aea077671fa4b8824a7f1b6910 = $(`<div id="html_b40619aea077671fa4b8824a7f1b6910" style="width: 100.0%; height: 100.0%;">Hilton Bangalore Embassy Golf Links, Embassy Golf Links Business Park, Domlur, Bangalore, Karnātaka, India</div>`)[0];
+                popup_508cb39dda9a7e5d46b2e6497f00c3b0.setContent(html_b40619aea077671fa4b8824a7f1b6910);
+            
+        
+
+        circle_marker_099061c4160d350a5c0212ee958792ae.bindPopup(popup_508cb39dda9a7e5d46b2e6497f00c3b0)
+        ;
+
+        
+    
+    
+            var circle_marker_607e164dafead01384c21aec01bd9415 = L.circleMarker(
+                [12.960797349702151, 77.64859701290223],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.686746987951807, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_14b7efcd3bebe185d8feea80bb1ebd0f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac6e5097fe043908d478b81b4504fb6f = $(`<div id="html_ac6e5097fe043908d478b81b4504fb6f" style="width: 100.0%; height: 100.0%;">Leela Palace, Bangalore, Karnātaka, India</div>`)[0];
+                popup_14b7efcd3bebe185d8feea80bb1ebd0f.setContent(html_ac6e5097fe043908d478b81b4504fb6f);
+            
+        
+
+        circle_marker_607e164dafead01384c21aec01bd9415.bindPopup(popup_14b7efcd3bebe185d8feea80bb1ebd0f)
+        ;
+
+        
+    
+    
+            var circle_marker_1702e22a2c109a3ac4c97fe34ec47b9c = L.circleMarker(
+                [12.911590581803074, 77.67616892974699],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.457831325301205, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_d44b0910afa6d8da0990cd34292075bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98ef0ae871f125e7985b4d441f2b793a = $(`<div id="html_98ef0ae871f125e7985b4d441f2b793a" style="width: 100.0%; height: 100.0%;">No 75, Bangalore, Karnātaka, India</div>`)[0];
+                popup_d44b0910afa6d8da0990cd34292075bb.setContent(html_98ef0ae871f125e7985b4d441f2b793a);
+            
+        
+
+        circle_marker_1702e22a2c109a3ac4c97fe34ec47b9c.bindPopup(popup_d44b0910afa6d8da0990cd34292075bb)
+        ;
+
+        
+    
+    
+            var circle_marker_60c2d1e55efb20315655464a03c92a78 = L.circleMarker(
+                [12.916458034417012, 77.52056681279288],
+                {"bubblingMouseEvents": true, "color": "#8CD6A4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8CD6A4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.289156626506024, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_d69947bcb2f1d493cf9f6ee6439c85e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_492755f0855e27d99ef43fa14f858a0f = $(`<div id="html_492755f0855e27d99ef43fa14f858a0f" style="width: 100.0%; height: 100.0%;">R R Nagar (Model Road), Bangalore, Karnātaka, India</div>`)[0];
+                popup_d69947bcb2f1d493cf9f6ee6439c85e3.setContent(html_492755f0855e27d99ef43fa14f858a0f);
+            
+        
+
+        circle_marker_60c2d1e55efb20315655464a03c92a78.bindPopup(popup_d69947bcb2f1d493cf9f6ee6439c85e3)
+        ;
+
+        
+    
+    
+            var circle_marker_5cb1fc10f2b14ac7d313cbb2951aa7c2 = L.circleMarker(
+                [13.012277731112103, 77.55508769740138],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.759036144578313, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_2801fb4226f3248732d3f0f906b38e9f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c2cdf2f1b936b609e50b9d2658188d6 = $(`<div id="html_0c2cdf2f1b936b609e50b9d2658188d6" style="width: 100.0%; height: 100.0%;">Sheraton Grand Brigade Gateway, Bangalore, Karnātaka, India</div>`)[0];
+                popup_2801fb4226f3248732d3f0f906b38e9f.setContent(html_0c2cdf2f1b936b609e50b9d2658188d6);
+            
+        
+
+        circle_marker_5cb1fc10f2b14ac7d313cbb2951aa7c2.bindPopup(popup_2801fb4226f3248732d3f0f906b38e9f)
+        ;
+
+        
+    
+    
+            var circle_marker_8edbe6f1d77007db442bc4e8fc81f790 = L.circleMarker(
+                [13.007842516912136, 77.55735525290685],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.9156626506024095, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_fbc7d2480e33579043be2a88de77e209 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a974215c5884f8aec51a60001a89a372 = $(`<div id="html_a974215c5884f8aec51a60001a89a372" style="width: 100.0%; height: 100.0%;">Malleshwaram (1522, 17th Cross), Bangalore, Karnātaka, India</div>`)[0];
+                popup_fbc7d2480e33579043be2a88de77e209.setContent(html_a974215c5884f8aec51a60001a89a372);
+            
+        
+
+        circle_marker_8edbe6f1d77007db442bc4e8fc81f790.bindPopup(popup_fbc7d2480e33579043be2a88de77e209)
+        ;
+
+        
+    
+    
+            var circle_marker_171ac4e6d979d39d3ad0558c4d38a217 = L.circleMarker(
+                [12.972910294178202, 77.53945662117336],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.445783132530121, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_b7959b1bcc68caf757de6833fddf7b41 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_23a97c089113788779033b7e946844e2 = $(`<div id="html_23a97c089113788779033b7e946844e2" style="width: 100.0%; height: 100.0%;">Service Rd, Hoshalli Extension, Vijaynagar, Bangalore, Karnātaka, India</div>`)[0];
+                popup_b7959b1bcc68caf757de6833fddf7b41.setContent(html_23a97c089113788779033b7e946844e2);
+            
+        
+
+        circle_marker_171ac4e6d979d39d3ad0558c4d38a217.bindPopup(popup_b7959b1bcc68caf757de6833fddf7b41)
+        ;
+
+        
+    
+    
+            var circle_marker_41be5275a72abe35da5e270ed3789d54 = L.circleMarker(
+                [13.011356968278331, 77.55521084441455],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.192771084337349, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_16d896663a78a2692f937bb1b56d5b96 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_995c69d9255ab1dcaaab811c20a635b3 = $(`<div id="html_995c69d9255ab1dcaaab811c20a635b3" style="width: 100.0%; height: 100.0%;">Bangalore, Karnātaka, India</div>`)[0];
+                popup_16d896663a78a2692f937bb1b56d5b96.setContent(html_995c69d9255ab1dcaaab811c20a635b3);
+            
+        
+
+        circle_marker_41be5275a72abe35da5e270ed3789d54.bindPopup(popup_16d896663a78a2692f937bb1b56d5b96)
+        ;
+
+        
+    
+    
+            var circle_marker_17d393f160809b93612737393c152c49 = L.circleMarker(
+                [12.98246025089549, 77.72186148869667],
+                {"bubblingMouseEvents": true, "color": "#D70D82", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D70D82", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.8915662650602405, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_a66723f7b4b9bd6d53a886e27073c761 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e8a8151ce8762d1a860acf8b5dd41022 = $(`<div id="html_e8a8151ce8762d1a860acf8b5dd41022" style="width: 100.0%; height: 100.0%;">#331 (Road #5B, EPIP Zone, Whitefield), Bangalore 560048, Karnātaka, India</div>`)[0];
+                popup_a66723f7b4b9bd6d53a886e27073c761.setContent(html_e8a8151ce8762d1a860acf8b5dd41022);
+            
+        
+
+        circle_marker_17d393f160809b93612737393c152c49.bindPopup(popup_a66723f7b4b9bd6d53a886e27073c761)
+        ;
+
+        
+    
+    
+            var circle_marker_10e91f9584952747b6609db431c32839 = L.circleMarker(
+                [13.042339214023034, 77.55473783528103],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.0, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_acfa0cd163d800b54db9a9899581a913 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e58f6d0baa6bbabf7e3c2050c343ca60 = $(`<div id="html_e58f6d0baa6bbabf7e3c2050c343ca60" style="width: 100.0%; height: 100.0%;">Mövenpick Hotel & Spa, Bangalore, Karnātaka, India</div>`)[0];
+                popup_acfa0cd163d800b54db9a9899581a913.setContent(html_e58f6d0baa6bbabf7e3c2050c343ca60);
+            
+        
+
+        circle_marker_10e91f9584952747b6609db431c32839.bindPopup(popup_acfa0cd163d800b54db9a9899581a913)
+        ;
+
+        
+    
+    
+            var circle_marker_707768a14f51a9da8ff19ad2da8694a0 = L.circleMarker(
+                [12.987441249738948, 77.54982632294248],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5783132530120483, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_ffaa620f2d6d94a7db7543fff06fa385 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e2f777f6d6aeab90ccda47e484696e13 = $(`<div id="html_e2f777f6d6aeab90ccda47e484696e13" style="width: 100.0%; height: 100.0%;">Chord Rd, Rajajinagar, Bangalore, Karnātaka, India</div>`)[0];
+                popup_ffaa620f2d6d94a7db7543fff06fa385.setContent(html_e2f777f6d6aeab90ccda47e484696e13);
+            
+        
+
+        circle_marker_707768a14f51a9da8ff19ad2da8694a0.bindPopup(popup_ffaa620f2d6d94a7db7543fff06fa385)
+        ;
+
+        
+    
+    
+            var circle_marker_163e225f1ff2342088c817c3d6a4e2b7 = L.circleMarker(
+                [12.996622810426281, 77.55417938115737],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.746987951807229, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_09fc60d5e0b7b65dc2e6514ad6077563 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a84432199808316185c26eaac8f59bca = $(`<div id="html_a84432199808316185c26eaac8f59bca" style="width: 100.0%; height: 100.0%;">1761/1, 2nd Stage, Rajaji Nagar (Dr. Rajkumar Rd), Bangalore 56001, Karnātaka, India</div>`)[0];
+                popup_09fc60d5e0b7b65dc2e6514ad6077563.setContent(html_a84432199808316185c26eaac8f59bca);
+            
+        
+
+        circle_marker_163e225f1ff2342088c817c3d6a4e2b7.bindPopup(popup_09fc60d5e0b7b65dc2e6514ad6077563)
+        ;
+
+        
+    
+    
+            var circle_marker_ad1b7e7f9f79f816a74902db6305b735 = L.circleMarker(
+                [12.915107444946734, 77.65172854034313],
+                {"bubblingMouseEvents": true, "color": "#49DD70", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#49DD70", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.771084337349397, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_e8188a03e10bc7f638e3c6b37e811e22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_87ad5467442640b32307878b452f2223 = $(`<div id="html_87ad5467442640b32307878b452f2223" style="width: 100.0%; height: 100.0%;">#2628 (27th Main Rd, 1st Sector, HSR Layout), Bangalore 560102, Karnātaka, India</div>`)[0];
+                popup_e8188a03e10bc7f638e3c6b37e811e22.setContent(html_87ad5467442640b32307878b452f2223);
+            
+        
+
+        circle_marker_ad1b7e7f9f79f816a74902db6305b735.bindPopup(popup_e8188a03e10bc7f638e3c6b37e811e22)
+        ;
+
+        
+    
+    
+            var circle_marker_9b769c2faf64f46d2e8942f3288db218 = L.circleMarker(
+                [12.994829948194463, 77.70100963135611],
+                {"bubblingMouseEvents": true, "color": "#D70D82", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D70D82", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.759036144578313, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_1210a2052ab13639ea92ffc420e6c421 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03884df690768e67da73903b0bf462b0 = $(`<div id="html_03884df690768e67da73903b0bf462b0" style="width: 100.0%; height: 100.0%;">Mahadevapura (ITPL Main Road), Bangalore 560048, Karnātaka, India</div>`)[0];
+                popup_1210a2052ab13639ea92ffc420e6c421.setContent(html_03884df690768e67da73903b0bf462b0);
+            
+        
+
+        circle_marker_9b769c2faf64f46d2e8942f3288db218.bindPopup(popup_1210a2052ab13639ea92ffc420e6c421)
+        ;
+
+        
+    
+    
+            var circle_marker_50aace7f159b5813a351796bd7b6f9d2 = L.circleMarker(
+                [13.011302925409263, 77.55503642450624],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.337349397590361, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_9a403533ad4bbcf882b8aef045c7fafe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a80e26c82a0aa1f85906b2b201702b66 = $(`<div id="html_a80e26c82a0aa1f85906b2b201702b66" style="width: 100.0%; height: 100.0%;">UG 09, Upper ground floor (Brigade Orion Mall), Bangalore, Karnātaka, India</div>`)[0];
+                popup_9a403533ad4bbcf882b8aef045c7fafe.setContent(html_a80e26c82a0aa1f85906b2b201702b66);
+            
+        
+
+        circle_marker_50aace7f159b5813a351796bd7b6f9d2.bindPopup(popup_9a403533ad4bbcf882b8aef045c7fafe)
+        ;
+
+        
+    
+    
+            var circle_marker_0c7b8637ff6c56e5db5f31914cadd4af = L.circleMarker(
+                [13.011712771648241, 77.5559680946897],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.048192771084337, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_84f95b61f8abc5da44971eb45560f940 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ec5ed50c49d840b15efe18f1939b621 = $(`<div id="html_8ec5ed50c49d840b15efe18f1939b621" style="width: 100.0%; height: 100.0%;">Brigade Orion Mall, Bangalore, Karnātaka, India</div>`)[0];
+                popup_84f95b61f8abc5da44971eb45560f940.setContent(html_8ec5ed50c49d840b15efe18f1939b621);
+            
+        
+
+        circle_marker_0c7b8637ff6c56e5db5f31914cadd4af.bindPopup(popup_84f95b61f8abc5da44971eb45560f940)
+        ;
+
+        
+    
+    
+            var circle_marker_22b6ef983f8d18bc2a89e2f6d795401e = L.circleMarker(
+                [12.998323627537209, 77.55230263939711],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.746987951807229, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_8d2a004f68f0fbdddeedd232c0310f46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27f70dfc3fa0a094c3fa3be46a062be4 = $(`<div id="html_27f70dfc3fa0a094c3fa3be46a062be4" style="width: 100.0%; height: 100.0%;">1st N Block (12th Main), Bangalore 560010, Karnātaka, India</div>`)[0];
+                popup_8d2a004f68f0fbdddeedd232c0310f46.setContent(html_27f70dfc3fa0a094c3fa3be46a062be4);
+            
+        
+
+        circle_marker_22b6ef983f8d18bc2a89e2f6d795401e.bindPopup(popup_8d2a004f68f0fbdddeedd232c0310f46)
+        ;
+
+        
+    
+    
+            var circle_marker_59c7f88a86bff4bc2f7f89f4780f62f3 = L.circleMarker(
+                [12.876071367527341, 77.59554190286784],
+                {"bubblingMouseEvents": true, "color": "#8CD6A4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8CD6A4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.156626506024097, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_397f35a76238dc64b52aa78b4c1c931e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_825a24e7e5eb34333a766230a9ab0a84 = $(`<div id="html_825a24e7e5eb34333a766230a9ab0a84" style="width: 100.0%; height: 100.0%;">Royal Meenakshi Mall (Bannerghatta Road), Bangalore, Karnātaka, India</div>`)[0];
+                popup_397f35a76238dc64b52aa78b4c1c931e.setContent(html_825a24e7e5eb34333a766230a9ab0a84);
+            
+        
+
+        circle_marker_59c7f88a86bff4bc2f7f89f4780f62f3.bindPopup(popup_397f35a76238dc64b52aa78b4c1c931e)
+        ;
+
+        
+    
+    
+            var circle_marker_3449569f3d3a1eea61f1b3074a0aa1a9 = L.circleMarker(
+                [12.996487384978787, 77.56150245666504],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.445783132530121, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_8c2986f713818574177b6fc4f548846e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a660df61cc0278ef412816279a42b0ba = $(`<div id="html_a660df61cc0278ef412816279a42b0ba" style="width: 100.0%; height: 100.0%;">Beside HarishChandra Ghat (At Mahakavi Kuvempu Road), Bangalore, Karnātaka, India</div>`)[0];
+                popup_8c2986f713818574177b6fc4f548846e.setContent(html_a660df61cc0278ef412816279a42b0ba);
+            
+        
+
+        circle_marker_3449569f3d3a1eea61f1b3074a0aa1a9.bindPopup(popup_8c2986f713818574177b6fc4f548846e)
+        ;
+
+        
+    
+    
+            var circle_marker_a0ceba8a85f617f281947d0222d12152 = L.circleMarker(
+                [12.979191536434127, 77.72824037594806],
+                {"bubblingMouseEvents": true, "color": "#D70D82", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D70D82", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.168674698795181, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_867719d13ab3ce9fd2f3d8cc37cb63e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54369186fd603c06400ba42fec8a40db = $(`<div id="html_54369186fd603c06400ba42fec8a40db" style="width: 100.0%; height: 100.0%;">India</div>`)[0];
+                popup_867719d13ab3ce9fd2f3d8cc37cb63e1.setContent(html_54369186fd603c06400ba42fec8a40db);
+            
+        
+
+        circle_marker_a0ceba8a85f617f281947d0222d12152.bindPopup(popup_867719d13ab3ce9fd2f3d8cc37cb63e1)
+        ;
+
+        
+    
+    
+            var circle_marker_1000e7f09e3e87b88fec3751957e4edd = L.circleMarker(
+                [13.093498229269551, 77.58242890586968],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.8674698795180724, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_2f4ef6fc2a27f4d9305202b91f87d6d0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d6b09d65fc6e08c229e2d7e598b65ba = $(`<div id="html_2d6b09d65fc6e08c229e2d7e598b65ba" style="width: 100.0%; height: 100.0%;">#293, SMK complex (1st Main Road,chikkanommasandra Circle), Yelahanka Newtown, Bangalore 560064, Karnātaka, India</div>`)[0];
+                popup_2f4ef6fc2a27f4d9305202b91f87d6d0.setContent(html_2d6b09d65fc6e08c229e2d7e598b65ba);
+            
+        
+
+        circle_marker_1000e7f09e3e87b88fec3751957e4edd.bindPopup(popup_2f4ef6fc2a27f4d9305202b91f87d6d0)
+        ;
+
+        
+    
+    
+            var circle_marker_aeafdedb44737265a83ce9098d1ee1ae = L.circleMarker(
+                [12.973878114553312, 77.72775107144086],
+                {"bubblingMouseEvents": true, "color": "#D70D82", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D70D82", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.024096385542169, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_643cb0be7a205da31e42c2b51df81821 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a0ab84e839945f7dc6785093acf68a9d = $(`<div id="html_a0ab84e839945f7dc6785093acf68a9d" style="width: 100.0%; height: 100.0%;">Whitefields, Bangalore, Karnātaka, India</div>`)[0];
+                popup_643cb0be7a205da31e42c2b51df81821.setContent(html_a0ab84e839945f7dc6785093acf68a9d);
+            
+        
+
+        circle_marker_aeafdedb44737265a83ce9098d1ee1ae.bindPopup(popup_643cb0be7a205da31e42c2b51df81821)
+        ;
+
+        
+    
+    
+            var circle_marker_7177410a23b0770a5455f11f9198a9ab = L.circleMarker(
+                [12.911081427702225, 77.55168981800485],
+                {"bubblingMouseEvents": true, "color": "#8CD6A4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8CD6A4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.433734939759036, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_957a9c04930e5c00457585f8c11adaec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ef881952b19441e3d5f4d0b9b332bb87 = $(`<div id="html_ef881952b19441e3d5f4d0b9b332bb87" style="width: 100.0%; height: 100.0%;">India</div>`)[0];
+                popup_957a9c04930e5c00457585f8c11adaec.setContent(html_ef881952b19441e3d5f4d0b9b332bb87);
+            
+        
+
+        circle_marker_7177410a23b0770a5455f11f9198a9ab.bindPopup(popup_957a9c04930e5c00457585f8c11adaec)
+        ;
+
+        
+    
+    
+            var circle_marker_e8314031fc1226c12862dad168200583 = L.circleMarker(
+                [12.876119022912667, 77.5954554873148],
+                {"bubblingMouseEvents": true, "color": "#8CD6A4", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#8CD6A4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.156626506024097, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_fb2fd8be81e6c68d20482906f306bbaf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e3a9f2442bb20e8fafc8c00f9c362ba8 = $(`<div id="html_e3a9f2442bb20e8fafc8c00f9c362ba8" style="width: 100.0%; height: 100.0%;">4th Floor, Royal Meenakshi Mall, Hulimavu (Bannerghatta Rd.), Bangalore 560076, Karnātaka, India</div>`)[0];
+                popup_fb2fd8be81e6c68d20482906f306bbaf.setContent(html_e3a9f2442bb20e8fafc8c00f9c362ba8);
+            
+        
+
+        circle_marker_e8314031fc1226c12862dad168200583.bindPopup(popup_fb2fd8be81e6c68d20482906f306bbaf)
+        ;
+
+        
+    
+    
+            var circle_marker_6a7ae9ea7d2caf411265a6380c27a3e8 = L.circleMarker(
+                [12.991461009778394, 77.5388324589418],
+                {"bubblingMouseEvents": true, "color": "#E2D2BC", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#E2D2BC", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.879518072289157, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_a5ac4b1de27b71b88d194474cdada4fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53f7301d3aa1eb24cd57cf212e3ab337 = $(`<div id="html_53f7301d3aa1eb24cd57cf212e3ab337" style="width: 100.0%; height: 100.0%;">8th main, Basaveshwaranagar, Bangalore 560079, Karnātaka, India</div>`)[0];
+                popup_a5ac4b1de27b71b88d194474cdada4fc.setContent(html_53f7301d3aa1eb24cd57cf212e3ab337);
+            
+        
+
+        circle_marker_6a7ae9ea7d2caf411265a6380c27a3e8.bindPopup(popup_a5ac4b1de27b71b88d194474cdada4fc)
+        ;
+
+        
+    
+    
+            var circle_marker_500b109cd1e859cfe0b5e417b8fbb3f6 = L.circleMarker(
+                [12.987282810027928, 77.73609334638515],
+                {"bubblingMouseEvents": true, "color": "#D70D82", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#D70D82", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.759036144578313, "stroke": true, "weight": 3}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+        var popup_6543b7b6d4c26f2f6196caa7d5291208 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4ab075531c839762e30dcd8241f283d = $(`<div id="html_f4ab075531c839762e30dcd8241f283d" style="width: 100.0%; height: 100.0%;">Park Square Mall (Whitefield), Bangalore, Karnātaka, India</div>`)[0];
+                popup_6543b7b6d4c26f2f6196caa7d5291208.setContent(html_f4ab075531c839762e30dcd8241f283d);
+            
+        
+
+        circle_marker_500b109cd1e859cfe0b5e417b8fbb3f6.bindPopup(popup_6543b7b6d4c26f2f6196caa7d5291208)
+        ;
+
+        
+    
+    
+            var marker_c6247cddeb3be5f2770c0514d2e12aa0 = L.marker(
+                [12.973457334267048, 77.61828850236205],
+                {}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+            var icon_1ca2585fe2b76aa1605d34feb0d4af2e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c6247cddeb3be5f2770c0514d2e12aa0.setIcon(icon_1ca2585fe2b76aa1605d34feb0d4af2e);
+        
+    
+        var popup_4258fb665f9203acb5b9b240efc2da17 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_856baf281e0cfa3dc0917f522c5ac655 = $(`<div id="html_856baf281e0cfa3dc0917f522c5ac655" style="width: 100.0%; height: 100.0%;">37-39 (Mahatma Gandhi Road), Bangalore 560001, Karnātaka, India</div>`)[0];
+                popup_4258fb665f9203acb5b9b240efc2da17.setContent(html_856baf281e0cfa3dc0917f522c5ac655);
+            
+        
+
+        marker_c6247cddeb3be5f2770c0514d2e12aa0.bindPopup(popup_4258fb665f9203acb5b9b240efc2da17)
+        ;
+
+        
+    
+    
+            var marker_f914ca53b101812ac6e4c68f74d827d8 = L.marker(
+                [12.922836198293112, 77.59341467506862],
+                {}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+            var icon_7b675e1aeec9bc0ed914ec06e6004317 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f914ca53b101812ac6e4c68f74d827d8.setIcon(icon_7b675e1aeec9bc0ed914ec06e6004317);
+        
+    
+        var popup_192172da82ba9f1f521287b79d2cae7a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f40b266b1307ad2434e324480b93f6d1 = $(`<div id="html_f40b266b1307ad2434e324480b93f6d1" style="width: 100.0%; height: 100.0%;">Next to HDFC BANK, Near SSMRV College (26th Main Rd), Bangalore 560041, Karnātaka, India</div>`)[0];
+                popup_192172da82ba9f1f521287b79d2cae7a.setContent(html_f40b266b1307ad2434e324480b93f6d1);
+            
+        
+
+        marker_f914ca53b101812ac6e4c68f74d827d8.bindPopup(popup_192172da82ba9f1f521287b79d2cae7a)
+        ;
+
+        
+    
+    
+            var marker_e9e572410b8e8cf3422de766f317c362 = L.marker(
+                [12.972910294178202, 77.53945662117336],
+                {}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+            var icon_fff01db4fa266b91887e6eeb071c81c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e9e572410b8e8cf3422de766f317c362.setIcon(icon_fff01db4fa266b91887e6eeb071c81c8);
+        
+    
+        var popup_c60540862ee8b032cb74209fa3b5811f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ab997dd6a48bd45a5787add39b228b1 = $(`<div id="html_1ab997dd6a48bd45a5787add39b228b1" style="width: 100.0%; height: 100.0%;">Service Rd, Hoshalli Extension, Vijaynagar, Bangalore, Karnātaka, India</div>`)[0];
+                popup_c60540862ee8b032cb74209fa3b5811f.setContent(html_1ab997dd6a48bd45a5787add39b228b1);
+            
+        
+
+        marker_e9e572410b8e8cf3422de766f317c362.bindPopup(popup_c60540862ee8b032cb74209fa3b5811f)
+        ;
+
+        
+    
+    
+            var marker_1208a1d594e46348bbcc48b520c7d242 = L.marker(
+                [12.998323627537209, 77.55230263939711],
+                {}
+            ).addTo(map_bbd4e339208e6b61c1ec039533b5bc5e);
+        
+    
+            var icon_0929eb32d8eac8442f1904ee3efdc3e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1208a1d594e46348bbcc48b520c7d242.setIcon(icon_0929eb32d8eac8442f1904ee3efdc3e3);
+        
+    
+        var popup_2e2d8e474c02082c6f6ef6d2608b5a25 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d447959f1f87a3ca8c024fb23f20d3e4 = $(`<div id="html_d447959f1f87a3ca8c024fb23f20d3e4" style="width: 100.0%; height: 100.0%;">1st N Block (12th Main), Bangalore 560010, Karnātaka, India</div>`)[0];
+                popup_2e2d8e474c02082c6f6ef6d2608b5a25.setContent(html_d447959f1f87a3ca8c024fb23f20d3e4);
+            
+        
+
+        marker_1208a1d594e46348bbcc48b520c7d242.bindPopup(popup_2e2d8e474c02082c6f6ef6d2608b5a25)
+        ;
+
+        
+    
+</script>
+</html>

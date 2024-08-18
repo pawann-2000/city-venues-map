@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Venues Analytics Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            padding-top: 0; /* Remove padding as header adds spacing */
+            margin: 0;
+            transition: background-color 0.3s ease;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+        }
+        header:hover {
+            background-color: #0056b3;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            margin-bottom: 2rem;
+        }
+        .map-frame {
+            width: 100%;
+            height: 60vh;
+            border: none;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .map-container:hover .map-frame {
+            transform: scale(1.02);
+        }
+        .map-caption {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .card {
+            border-radius: 10px;
+            transition: box-shadow 0.3s ease;
+        }
+        .card:hover {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2, p {
+            transition: color 0.3s ease;
+        }
+        h1:hover, h2:hover, p:hover {
+            color: #b5d9ff;
+        }
+        .spinner {
+            display: none;
+            width: 3rem;
+            height: 3rem;
+            border: 0.25rem solid #f3f3f3;
+            border-top: 0.25rem solid #007bff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 1.5rem auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .progress {
+            display: none;
+            height: 0.5rem;
+            margin-top: 1.5rem;
+        }
+        .progress-bar {
+            background-color: #007bff;
+        }
+        .progress-text {
+            text-align: center;
+            margin-top: 0.5rem;
+            font-size: 0.875rem;
+            color: #6c757d;
+        }
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 1.5rem;
+            }
+        }
+        @media (max-width: 480px) {
+            body {
+                align-items: flex-start;
+                padding-top: 1rem;
+            }
+            .container {
+                margin: 0 auto;
+            }
+        }
+        .venues-list {
+            margin-top: 20px;
+        }
+        .venues-list h2 {
+            margin-bottom: 20px;
+            color: #007bff;
+            font-weight: 600;
+        }
+        .list-group-item {
+            transition: transform 0.2s ease;
+        }
+        .list-group-item:hover {
+            transform: scale(1.02);
+        }
+        .list-group-item .badge {
+            transition: background-color 0.3s ease;
+        }
+        .list-group-item:hover .badge {
+            background-color: #0056b3;
+        }
+        .analytics-img {
+            cursor: pointer;
+            border-radius: .5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .analytics-img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container text-center">
+            <h1><a href="/" class="text-white text-decoration-none">City Venues Analytics Dashboard</a></h1>
+        </div>
+    </header>
+
+    <div class="container mt-4">
+        <div class="map-container">
+            <iframe src="{{ map_url }}" class="map-frame" frameborder="0" allowfullscreen></iframe>
+            <div class="map-caption">Map of City Venues</div>
+        </div>
+        
+        <div class="analytics-container">
+            <div class="row g-4">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="fs-5 mb-3">Pairplot</h2>
+                            <img src="data:image/png;base64,{{ analytics['pairplot'] }}" alt="Pairplot of city venues" class="img-fluid analytics-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="fs-5 mb-3">Boxplot</h2>
+                            <img src="data:image/png;base64,{{ analytics['boxplot'] }}" alt="Boxplot of city venues" class="img-fluid analytics-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="fs-5 mb-3">Elbow Method Graph</h2>
+                            <img src="data:image/png;base64,{{ analytics['elbow'] }}" alt="Elbow Method Graph" class="img-fluid analytics-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-4">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="fs-5 mb-3">Scatter Plot 1</h2>
+                            <img src="data:image/png;base64,{{ analytics['scatter1'] }}" alt="Scatter Plot 1 of city venues" class="img-fluid analytics-img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h2 class="fs-5 mb-3">Scatter Plot 2</h2>
+                            <img src="data:image/png;base64,{{ analytics['scatter2'] }}" alt="Scatter Plot 2 of city venues" class="img-fluid analytics-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="/" class="btn btn-primary w-100 mt-5">Back to Home</a>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img id="modalImage" src="" alt="Modal Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
+            var modalImage = document.getElementById('modalImage');
+
+            document.querySelectorAll('.analytics-img').forEach(function(img) {
+                img.addEventListener('click', function() {
+                    modalImage.src = this.src;
+                    imageModal.show();
+                });
+            });
+        });
+    </script>
+
+    <footer class="bg-light text-center py-4 mt-4">
+        <div class="container">
+            <p class="mb-0">City Venues Map &copy; 2024. All rights reserved.</p>
+            <p>Developed with <span style="color: red;">&hearts;</span> in India</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
